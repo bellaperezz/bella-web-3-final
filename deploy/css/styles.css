@@ -322,6 +322,40 @@ template {
 /* =============
     Base
 ============= */
+.container {
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  grid-template-areas: ". content .";
+}
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    grid-template-columns: auto 1320px auto;
+  }
+}
+.container .content {
+  grid-area: content;
+}
+
+.content {
+  grid-area: content;
+}
+
+.large-images {
+  width: 190px;
+  height: 190px;
+  display: block;
+}
+
+.content-spacing {
+  padding-top: 30px;
+  padding-bottom: 18px;
+}
+
 /* =============
     Typography
 ============= */
@@ -356,12 +390,119 @@ textarea {
 /* =============
     Header
 ============= */
+header .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 0px;
+}
+
+header {
+  background-color: #000;
+  color: white;
+}
+header .content div {
+  margin: 20px 0 20px 0px;
+}
+@media (min-width: 768px) {
+  header .content div {
+    margin: 25px 0 25px 0px;
+  }
+}
+header .content img {
+  width: 125px;
+  padding-right: 0.5ren;
+}
+@media (min-width: 992px) {
+  header .content img {
+    width: 230px;
+    padding-right: 1ren;
+  }
+}
+header .content h1 {
+  display: none;
+  color: #000;
+}
+@media (min-width: 768px) {
+  header .content h1 {
+    display: inline-block;
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  header .content h1 {
+    font-size: 36px;
+  }
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     Hero
 ============= */
+.hero {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 31px 5px 0px 0px;
+  gap: 43px;
+  left: 30px;
+  position: absolute;
+  width: 320px;
+  height: 193px;
+  background: black;
+  top: 88px;
+}
+.hero .hero-content .Frame-94 {
+  width: 262px;
+  height: 137px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 43px;
+  padding: 0;
+}
+.hero .hero-content .Frame-94 p {
+  width: 262px;
+  height: 40px;
+  flex-grow: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+}
+.hero .Get-Started-Button {
+  width: 159px;
+  height: 54px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 24px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.hero .Button-Text {
+  width: 85px;
+  height: 18px;
+  flex-grow: 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  text-align: center;
+  color: #5d5a88;
+}
+
 /* =============
     accessories
 ============= */

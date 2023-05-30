@@ -2,3 +2,60 @@
     Base
 ============= */
 
+.container{
+    display:grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-areas: 
+    ". content ."
+    ;
+
+    @include xl{
+        grid-template-columns: auto 1140px auto;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1320px auto;
+    }
+
+    .content{
+        grid-area:content;
+    }
+
+}
+
+.content{
+    grid-area:content;
+} 
+
+@include sm{
+
+}
+
+@include md{
+
+}
+
+@include lg{
+
+}
+
+@include xl{
+
+}
+
+@include xxl{
+
+}
+
+
+
+.large-images{
+    width: 190px;
+    height: 190px;
+    display: block;
+}
+
+.content-spacing{
+    padding-top:30px;
+    padding-bottom:18px;
+}

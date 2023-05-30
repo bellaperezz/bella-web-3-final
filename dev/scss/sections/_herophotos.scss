@@ -1,0 +1,53 @@
+/* =============
+    hero photos
+============= */
+.hero-photos{
+
+    
+
+
+    ul{
+        list-style: none;
+        
+
+        li{
+            &.img-2{
+
+
+             @include xl{
+                    grid-area: g1;
+                    grid-template-columns: 50% auto;
+                }
+            }
+
+            &.img-1{
+
+        
+                @include xl{
+                    grid-area: g2;
+                    grid-template-columns: auto 50%;
+                }
+
+            }
+        }
+
+
+        
+    }
+
+
+    p{
+
+        width: 353px;
+        height: 196px;
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+}
