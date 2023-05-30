@@ -3,7 +3,7 @@
 ============= */
 .hero-photos{
 
-    
+    background-color: $black;
 
 
     ul{
@@ -11,7 +11,7 @@
         
 
         li{
-            &.img-2{
+            &.image-2{
 
 
              @include xl{
@@ -20,7 +20,7 @@
                 }
             }
 
-            &.img-1{
+            &.image-1{
 
         
                 @include xl{
@@ -35,19 +35,22 @@
         
     }
 
+    .content{
 
-    p{
 
-        width: 353px;
-        height: 196px;
+        p{
 
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 21px;
-        text-align: center;
+            width: 353px;
+            height: 196px;
 
-        color: #FFFFFF;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
     }
 }
