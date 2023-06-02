@@ -1,3 +1,177 @@
 /* =============
     accessories
 ============= */
+.accessories{
+  
+   
+    .type{
+        h1{
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+    }
+
+    background-color: black;
+    
+
+
+    .accessory{
+
+        @include md{
+            display:grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas:
+            ". articles ."
+            ;
+        }
+
+        @include xl{
+            grid-template-columns: auto 1140px auto;
+        }
+
+        @include xxl{
+            grid-template-columns: auto 1320px auto;
+        }
+
+
+        ul.accessories-grid{
+            
+
+           align-items: center;
+                
+
+            @include md{
+                grid-area:accessories;
+                display: grid;
+                grid-template-columns: repeat (8,1fr);
+                grid-template-areas: 
+                "a1 a2"
+                "a3 a4"
+                "a5 a6"
+                "a7 a8";
+            }
+
+            @include lg{
+                grid-template-columns: repeat(8,1fr);
+                grid-template-areas:
+                "a1 a2 a3 a4"
+                "a5 a6 a7 a8";
+            }
+
+            li{
+
+                background-color: $black;
+
+                .container{
+
+                    padding: 15px 0 35px 0;
+
+                     @include xl{
+                        grid-template-columns: 15 px auto 15 px;
+                    }
+
+                }
+
+                &.accessory-1{
+
+                    p{
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    @include md{
+                        grid-area: a1;
+                    }
+                }
+
+                &.accessory-2{
+
+                    p{
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    @include md{
+                        grid-area: a2;
+                    }
+                }
+
+                &.accessory-3{
+
+                    p{
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    @include md{
+                        grid-area: a3;
+                    }
+                }
+
+                &.accessory-4{
+
+                    p{
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    @include md{
+                        grid-area: a4;
+                    }
+                }
+
+                &.accessory-5{
+
+                    p{
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    @include md{
+                        grid-area: a5;
+                    }
+                }
+
+                &.accessory-6{
+
+                    p{
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    @include md{
+                        grid-area: a6;
+                    }
+                }
+
+                &.accessory-7{
+
+                    p{
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    @include md{
+                        grid-area: a7;
+                    }
+                }
+
+                &.accessory-8{
+
+                    p{
+                        color: $white;
+                        text-align: center;
+                    }
+
+                    @include md{
+                        grid-area: a8;
+                    }
+                }
+                
+
+            }
+            
+        }
+    }
+}

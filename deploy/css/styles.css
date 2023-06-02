@@ -346,8 +346,7 @@ template {
 }
 
 .large-images {
-  width: 190px;
-  height: 190px;
+  width: 100%;
   display: block;
 }
 
@@ -441,69 +440,265 @@ header .content h1 {
     Hero
 ============= */
 .hero {
-  width: 320px;
-  height: 148px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  padding: 0;
+  padding: 40px;
   background-color: #000;
 }
 .hero p {
-  width: 262px;
-  height: 40px;
-  flex-grow: 0;
   font-size: 20px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
   text-align: center;
   color: #fff;
 }
 .hero .Get-Started-Button {
-  width: 145px;
-  height: 50px;
-  flex-grow: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  padding: 5px;
+  text-align: center;
+}
+.hero .Get-Started-Button button {
   border-radius: 30px;
   background-color: #fff;
-  align-self: center;
-}
-.hero .Button-Text {
-  width: 85px;
-  height: 18px;
-  flex-grow: 0;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.13;
-  letter-spacing: normal;
-  text-align: center;
-  color: #5d5a88;
-  padding: 10px;
+  border: none;
+  padding: 20px 40px;
 }
 
 /* =============
     accessories
 ============= */
+.accessories {
+  background-color: black;
+}
+.accessories .type h1 {
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+@media (min-width: 768px) {
+  .accessories .accessory {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". articles .";
+  }
+}
+@media (min-width: 1200px) {
+  .accessories .accessory {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .accessories .accessory {
+    grid-template-columns: auto 1320px auto;
+  }
+}
+.accessories .accessory ul.accessories-grid {
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid {
+    grid-area: accessories;
+    display: grid;
+    grid-template-columns: repeat 8, 1fr;
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a6" "a7 a8";
+  }
+}
+@media (min-width: 992px) {
+  .accessories .accessory ul.accessories-grid {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "a1 a2 a3 a4" "a5 a6 a7 a8";
+  }
+}
+.accessories .accessory ul.accessories-grid li {
+  background-color: #000;
+}
+.accessories .accessory ul.accessories-grid li .container {
+  padding: 15px 0 35px 0;
+}
+@media (min-width: 1200px) {
+  .accessories .accessory ul.accessories-grid li .container {
+    grid-template-columns: 15 px auto 15 px;
+  }
+}
+.accessories .accessory ul.accessories-grid li.accessory-1 p {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid li.accessory-1 {
+    grid-area: a1;
+  }
+}
+.accessories .accessory ul.accessories-grid li.accessory-2 p {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid li.accessory-2 {
+    grid-area: a2;
+  }
+}
+.accessories .accessory ul.accessories-grid li.accessory-3 p {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid li.accessory-3 {
+    grid-area: a3;
+  }
+}
+.accessories .accessory ul.accessories-grid li.accessory-4 p {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid li.accessory-4 {
+    grid-area: a4;
+  }
+}
+.accessories .accessory ul.accessories-grid li.accessory-5 p {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid li.accessory-5 {
+    grid-area: a5;
+  }
+}
+.accessories .accessory ul.accessories-grid li.accessory-6 p {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid li.accessory-6 {
+    grid-area: a6;
+  }
+}
+.accessories .accessory ul.accessories-grid li.accessory-7 p {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid li.accessory-7 {
+    grid-area: a7;
+  }
+}
+.accessories .accessory ul.accessories-grid li.accessory-8 p {
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .accessories .accessory ul.accessories-grid li.accessory-8 {
+    grid-area: a8;
+  }
+}
+
 /* =============
    FAQ's
 ============= */
 /* =============
    GIF
 ============= */
+.gif {
+  background-color: black;
+}
+.gif h3 {
+  text-align: center;
+  color: #fff;
+}
+.gif p {
+  text-align: center;
+  color: #fff;
+}
+
 /* =============
     Pricing
 ============= */
+.pricing .type h2 {
+  font-size: 20px;
+  color: #5D5A88;
+  text-align: center;
+}
+.pricing .type p {
+  font-size: 18px;
+  color: #ADABC3;
+  text-align: center;
+}
+
 /* =============
     Reviews
 ============= */
+.reviews {
+  margin: 0 0 20px 0;
+}
+@media (min-width: 768px) {
+  .reviews {
+    margin: 30px 0 40px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    margin: 50px 0 60px 0;
+  }
+}
+.reviews .reviews-title h1 {
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .reviews .reviews-title h1 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .reviews .reviews-title h1 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews .reviews-title h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .reviews .review-cards {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". articles .";
+  }
+}
+@media (min-width: 1200px) {
+  .reviews .review-cards {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .reviews .review-cards {
+    grid-template-columns: auto 1320px auto;
+  }
+}
+
+/* =============
+    hero photos
+============= */
+.hero-photos {
+  background-color: #000;
+}
+.hero-photos ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 1200px) {
+  .hero-photos ul li.image-1 {
+    grid-area: g1;
+  }
+}
+.hero-photos .content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}

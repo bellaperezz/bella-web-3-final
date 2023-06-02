@@ -1,3 +1,21 @@
 /* =============
     Pricing
 ============= */
+.pricing{
+
+    .type{
+
+        h2{
+            font-size: 20px;
+            color: $darkpurple;
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+            color: $purple;
+            text-align: center;
+
+        }
+    }
+}
