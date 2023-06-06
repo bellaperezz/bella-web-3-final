@@ -1,0 +1,17 @@
+/* =============
+   order number
+============= */
+.order-number{
+
+   background-color: black;
+
+   .content{
+
+      p{
+         color: $gray;
+         font-size: 22px;
+         line-height: 29px;
+         text-align: center;
+      }
+   }
+}

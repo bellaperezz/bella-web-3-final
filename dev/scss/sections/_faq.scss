@@ -1,3 +1,120 @@
 /* =============
    FAQ's
 ============= */
+.FAQ{
+   
+   background-color: $black;
+
+   .FAQ-title{
+      
+
+      h1{
+         font-weight: bold;
+         font-size: 28px;
+         color: $darkpurple;
+         text-align: center;
+
+         @include md{
+            font-size: 28px;
+        }
+
+        @include lg{
+            font-size: 32px;
+        }
+
+        @include xl{
+            font-size: 40px;
+        }
+      }
+
+      p{
+         font-weight:100;
+         font-size: 18px;
+         color: $purple;
+         text-align: center;
+         padding: 10px;
+
+      }
+   }
+
+   .FAQ-cards{
+
+      @include md{
+         gap:10px;
+         display:grid;
+         grid-template-columns: 15px auto 15px;
+         grid-template-areas:
+         ". FAQ ."
+         ;
+     }
+
+     @include xl{
+         grid-template-columns: auto 1140px auto;
+     }
+
+     @include xxl{
+         grid-template-columns: auto 1320px auto;
+     }
+
+     .FAQ-grid{
+
+      
+
+      .container{
+       gap:10px;
+       display: block;
+       background-color: white;
+       border-radius: 15px;
+       padding: 15px 10px 35px 10px;
+       margin: 25px;
+      }
+
+      @include md{
+         grid-area: FAQ;
+      }
+
+      @include lg{
+         display: grid;
+         grid-template-columns: 1fr;
+
+      }
+
+      h3{
+         color: $darkpurple;
+      }
+
+      p{
+         color: $purple;
+         font-weight: 100;
+      }
+
+      &.FAQ-1{
+         @include md{
+            grid-area: a1;
+         }
+      }
+
+      &.FAQ-2{
+         @include md{
+            grid-area: a2;
+         }
+      }
+
+      &.FAQ-3{
+         @include md{
+            grid-area: a3;
+         }
+      }
+
+      &.FAQ-4{
+         @include md{
+            grid-area: a4;
+         }
+      }
+
+
+
+
+     }
+   }
+}

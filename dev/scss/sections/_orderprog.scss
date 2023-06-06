@@ -1,0 +1,108 @@
+/* =============
+   order progress
+============= */
+.order-progress{
+
+   background-color: $black;
+
+   display: block;
+   
+
+   @include md{
+       margin:0px;
+   }
+
+   @include xl{
+       margin: 50px 0 60px 0;
+       
+   }
+
+   .order-cards{
+
+      @include md{
+         gap:10px;
+         display:grid;
+         grid-template-columns: 15px auto 15px;
+         grid-template-areas: 
+         ". order ."
+         ;
+      }
+
+      @include xl{
+         grid-template-columns: auto 1140px auto;
+
+      }
+
+      @include xxl{
+         grid-template-columns: auto 1320px auto;
+      }
+
+      .order-grid{
+
+         gap:10px;
+         display: block;
+         
+         @include md{
+            grid-area: order;
+         }
+
+         @include lg{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+         }
+
+         .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding: 10px;
+         }
+   
+         p{
+            text-align: center;
+            font-size: 22px;
+            color: $purple;
+         }
+   
+         ul{
+            list-style: none;
+            padding-left: 0;
+         }
+   
+         li{
+            list-style:none;
+            padding-left: 0;
+            align-self: center;
+            display: block;
+         }
+
+         &.recieved{
+            @include md{
+               grid-area: a1;
+
+            }
+         }
+
+         &.dots{
+            @include md{
+               grid-area: a2;
+
+            }
+
+         }
+
+         &.processing{
+            @include md{
+               grid-area: a3;
+            }
+         }
+         
+      }
+   }
+
+      
+
+      
+   
+}

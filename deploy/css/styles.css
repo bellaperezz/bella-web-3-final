@@ -436,6 +436,20 @@ header .content h1 {
 /* =============
     Footer
 ============= */
+.footer {
+  background-color: #000;
+}
+.footer .footer-text p {
+  font-size: 16;
+  color: #ADABC3;
+  text-align: center;
+}
+.footer li {
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+}
+
 /* =============
     Hero
 ============= */
@@ -475,7 +489,7 @@ header .content h1 {
   .accessories .accessory {
     display: grid;
     grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". articles .";
+    grid-template-areas: ". accessories .";
   }
 }
 @media (min-width: 1200px) {
@@ -489,19 +503,23 @@ header .content h1 {
   }
 }
 .accessories .accessory ul.accessories-grid {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 @media (min-width: 768px) {
   .accessories .accessory ul.accessories-grid {
     grid-area: accessories;
     display: grid;
-    grid-template-columns: repeat 8, 1fr;
-    grid-template-areas: "a1 a2" "a3 a4" "a5 a6" "a7 a8";
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "a1 a1 a2 a2 a3 a3 a4 a4" "a5 a5 a6 a6 a7 a7 a8 a8";
   }
 }
 @media (min-width: 992px) {
   .accessories .accessory ul.accessories-grid {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "a1 a2 a3 a4" "a5 a6 a7 a8";
   }
 }
@@ -592,6 +610,102 @@ header .content h1 {
 /* =============
    FAQ's
 ============= */
+.FAQ {
+  background-color: #000;
+}
+.FAQ .FAQ-title h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #5D5A88;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .FAQ .FAQ-title h1 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .FAQ .FAQ-title h1 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .FAQ .FAQ-title h1 {
+    font-size: 40px;
+  }
+}
+.FAQ .FAQ-title p {
+  font-weight: 100;
+  font-size: 18px;
+  color: #ADABC3;
+  text-align: center;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .FAQ .FAQ-cards {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". FAQ .";
+  }
+}
+@media (min-width: 1200px) {
+  .FAQ .FAQ-cards {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .FAQ .FAQ-cards {
+    grid-template-columns: auto 1320px auto;
+  }
+}
+.FAQ .FAQ-cards .FAQ-grid .container {
+  gap: 10px;
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 10px 35px 10px;
+  margin: 25px;
+}
+@media (min-width: 768px) {
+  .FAQ .FAQ-cards .FAQ-grid {
+    grid-area: FAQ;
+  }
+}
+@media (min-width: 992px) {
+  .FAQ .FAQ-cards .FAQ-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.FAQ .FAQ-cards .FAQ-grid h3 {
+  color: #5D5A88;
+}
+.FAQ .FAQ-cards .FAQ-grid p {
+  color: #ADABC3;
+  font-weight: 100;
+}
+@media (min-width: 768px) {
+  .FAQ .FAQ-cards .FAQ-grid.FAQ-1 {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  .FAQ .FAQ-cards .FAQ-grid.FAQ-2 {
+    grid-area: a2;
+  }
+}
+@media (min-width: 768px) {
+  .FAQ .FAQ-cards .FAQ-grid.FAQ-3 {
+    grid-area: a3;
+  }
+}
+@media (min-width: 768px) {
+  .FAQ .FAQ-cards .FAQ-grid.FAQ-4 {
+    grid-area: a4;
+  }
+}
+
 /* =============
    GIF
 ============= */
@@ -610,6 +724,77 @@ header .content h1 {
 /* =============
     Pricing
 ============= */
+.pricing {
+  background-color: black;
+}
+@media (min-width: 768px) {
+  .pricing .pricing-cards {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". pricing .";
+  }
+}
+@media (min-width: 1200px) {
+  .pricing .pricing-cards {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .pricing .pricing-cards {
+    grid-template-columns: auto 1320px auto;
+  }
+}
+.pricing .pricing-cards .pricing-grid {
+  gap: 10px;
+}
+.pricing .pricing-cards .pricing-grid .container {
+  gap: 10px;
+  display: block;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px 10px 35px 10px;
+  margin: 20px;
+}
+@media (min-width: 768px) {
+  .pricing .pricing-cards .pricing-grid {
+    grid-area: pricing;
+  }
+}
+@media (min-width: 992px) {
+  .pricing .pricing-cards .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.pricing .pricing-cards .pricing-grid li {
+  background-color: #fff;
+  list-style: none;
+  padding-left: 0;
+}
+.pricing .pricing-cards .pricing-grid ul {
+  list-style: none;
+  padding-left: 0;
+}
+.pricing .pricing-cards .pricing-grid a {
+  color: #5D5A88;
+  background-color: #ADABC3;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 40px;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .pricing .pricing-cards .pricing-grid.pricing-1 {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  .pricing .pricing-cards .pricing-grid.pricing-2 {
+    grid-area: a2;
+  }
+}
 .pricing .type h2 {
   font-size: 20px;
   color: #5D5A88;
@@ -625,11 +810,12 @@ header .content h1 {
     Reviews
 ============= */
 .reviews {
-  margin: 0 0 20px 0;
+  background-color: black;
+  display: block;
 }
 @media (min-width: 768px) {
   .reviews {
-    margin: 30px 0 40px 0;
+    margin: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -638,7 +824,7 @@ header .content h1 {
   }
 }
 .reviews .reviews-title h1 {
-  background-color: black;
+  background-color: #000;
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
@@ -662,9 +848,10 @@ header .content h1 {
 }
 @media (min-width: 768px) {
   .reviews .review-cards {
+    gap: 10px;
     display: grid;
     grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". articles .";
+    grid-template-areas: ". review .";
   }
 }
 @media (min-width: 1200px) {
@@ -675,6 +862,62 @@ header .content h1 {
 @media (min-width: 1400px) {
   .reviews .review-cards {
     grid-template-columns: auto 1320px auto;
+  }
+}
+.reviews .review-cards .review-grid {
+  gap: 10px;
+}
+.reviews .review-cards .review-grid .container {
+  gap: 10px;
+  display: block;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px 10px 35px 10px;
+  margin: 20px;
+}
+@media (min-width: 768px) {
+  .reviews .review-cards .review-grid {
+    grid-area: review;
+  }
+}
+@media (min-width: 992px) {
+  .reviews .review-cards .review-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.reviews .review-cards .review-grid li {
+  background-color: #fff;
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+}
+.reviews .review-cards .review-grid ul {
+  list-style: none;
+  padding-left: 0;
+}
+.reviews .review-cards .review-grid a {
+  color: #5D5A88;
+  background-color: #ADABC3;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 40px;
+  margin: 10px 65px 10px 65px;
+}
+@media (min-width: 768px) {
+  .reviews .review-cards .review-grid.review-1 {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  .reviews .review-cards .review-grid.review-2 {
+    grid-area: a2;
+  }
+}
+@media (min-width: 768px) {
+  .reviews .review-cards .review-grid.review-3 {
+    grid-area: a3;
   }
 }
 
@@ -701,4 +944,128 @@ header .content h1 {
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
+}
+
+/* =============
+   Thank 
+   you
+============= */
+.thankyou {
+  background-color: black;
+}
+.thankyou .content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  padding: 0px;
+}
+.thankyou .content p {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  padding: 0 5px 0 5px;
+}
+
+/* =============
+   order number
+============= */
+.order-number {
+  background-color: black;
+}
+.order-number .content p {
+  color: #959498;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+}
+
+/* =============
+   order progress
+============= */
+.order-progress {
+  background-color: #000;
+  display: block;
+}
+@media (min-width: 768px) {
+  .order-progress {
+    margin: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .order-progress {
+    margin: 50px 0 60px 0;
+  }
+}
+@media (min-width: 768px) {
+  .order-progress .order-cards {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". order .";
+  }
+}
+@media (min-width: 1200px) {
+  .order-progress .order-cards {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .order-progress .order-cards {
+    grid-template-columns: auto 1320px auto;
+  }
+}
+.order-progress .order-cards .order-grid {
+  gap: 10px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .order-progress .order-cards .order-grid {
+    grid-area: order;
+  }
+}
+@media (min-width: 992px) {
+  .order-progress .order-cards .order-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.order-progress .order-cards .order-grid .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+.order-progress .order-cards .order-grid p {
+  text-align: center;
+  font-size: 22px;
+  color: #ADABC3;
+}
+.order-progress .order-cards .order-grid ul {
+  list-style: none;
+  padding-left: 0;
+}
+.order-progress .order-cards .order-grid li {
+  list-style: none;
+  padding-left: 0;
+  align-self: center;
+  display: block;
+}
+@media (min-width: 768px) {
+  .order-progress .order-cards .order-grid.recieved {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  .order-progress .order-cards .order-grid.dots {
+    grid-area: a2;
+  }
+}
+@media (min-width: 768px) {
+  .order-progress .order-cards .order-grid.processing {
+    grid-area: a3;
+  }
 }
