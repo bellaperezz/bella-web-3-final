@@ -5,21 +5,34 @@
 
     background-color: black;
     display: block;
+    padding:20px 0 20px 0;
+    margin: 0;
+    gap: 0px;
     
+    @include sm{
+        margin:0px;
+    }
 
     @include md{
         margin:0px;
     }
 
     @include xl{
-        margin: 50px 0 60px 0;
+        margin: 0px;
         
+    }
+
+    .center{
+        text-align: center;
+
     }
 
     .reviews-title{
 
+        
+
         h1{
-            background-color: $black;
+            margin: 0;
             font-size: 20px;
             font-weight: bold;
             line-height: 1;
@@ -41,9 +54,11 @@
     }
 
     .review-cards{
+
+        
         
         @include md{
-            gap:10px;
+            
             display:grid;
             grid-template-columns: 15px auto 15px;
             grid-template-areas:
@@ -53,15 +68,17 @@
 
         @include xl{
             grid-template-columns: auto 1140px auto;
+            margin: 0px;
         }
 
         @include xxl{
             grid-template-columns: auto 1320px auto;
+            margin: 0px;
         }
 
         .review-grid{
 
-            gap:10px;
+            
 
            .container{
             gap:10px;
@@ -69,7 +86,7 @@
             background-color: white;
             border-radius: 20px;
             padding: 15px 10px 35px 10px;
-            margin: 20px;
+            margin: 30px 20px 30px 20px;
            }
 
             @include md{
@@ -104,7 +121,8 @@
                 text-decoration: none;
                 text-align: center;
                 border-radius: 40px;
-                margin: 10px 65px 10px 65px;
+                margin: 10px 15px 10px 15px;
+                
             }
 
             &.review-1{
@@ -132,8 +150,11 @@
                     grid-area: a3;
                     
                 }
-            }
+
                 
+            }
+
+            
         }
 
        

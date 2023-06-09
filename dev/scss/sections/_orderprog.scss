@@ -1,6 +1,9 @@
 /* =============
    order progress
 ============= */
+.color{
+   background-color: $black;
+}
 .order-progress{
 
    background-color: $black;
@@ -22,7 +25,7 @@
       @include md{
          gap:10px;
          display:grid;
-         grid-template-columns: 15px auto 15px;
+         grid-template-columns: auto 100 auto;
          grid-template-areas: 
          ". order ."
          ;
@@ -48,7 +51,7 @@
 
          @include lg{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: auto 150px auto;
          }
 
          .center {
@@ -68,6 +71,9 @@
          ul{
             list-style: none;
             padding-left: 0;
+            padding-top: 100;
+            display: flex;
+            justify-content: center;
          }
    
          li{
@@ -84,7 +90,23 @@
             }
          }
 
+         .dots{
+
+            @include sm{
+               ul{
+                  list-style: none;
+                  padding-left: 0;
+                  padding-top: 100;
+                  justify-content: center;
+               }
+            }
+         }
+
+         
+
          &.dots{
+
+            
             @include md{
                grid-area: a2;
 

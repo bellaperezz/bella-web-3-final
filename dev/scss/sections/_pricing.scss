@@ -3,6 +3,8 @@
 ============= */
 .pricing{
     background-color: black;
+    padding: 50px 0 30px 0;
+    margin: 0px;
 
     .pricing-cards{
 
@@ -23,6 +25,7 @@
             grid-template-columns: auto 1320px auto;
         }
 
+       
         .pricing-grid{
 
             gap:10px;
@@ -38,6 +41,8 @@
 
             @include md{
                 grid-area: pricing;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
             }
 
             @include lg{
@@ -47,18 +52,28 @@
             }
 
             li{
-                background-color: $white;
+                
                 list-style:none;
                 padding-left: 0;
-                
+                display: flex;
+                padding: 10px;
 
+                img{
+
+                    padding-right: 10px;
+                }
                 
             }
 
             ul{
                 list-style:none;
                 padding-left: 0;
-                
+                padding: 5px;
+
+                div{
+                    padding: 10px 0 0 0;
+                    text-align: center;
+                }
             }
 
             a{
@@ -69,7 +84,20 @@
                 text-align: center;
                 border-radius: 40px;
                 justify-content: center;
+                border: 15px;
             }
+
+            .color{
+                background-color: $lightestpurple;
+            }
+
+            .spacing{
+
+            
+                    padding: 0 0 75px 0;
+                
+            }
+    
 
             &.pricing-1{
                 @include md{
@@ -89,6 +117,8 @@
                 }
 
                 
+
+                
             }
         }
 
@@ -99,6 +129,7 @@
     .type{
 
         h2{
+            margin:0;
             font-size: 20px;
             color: $darkpurple;
             text-align: center;

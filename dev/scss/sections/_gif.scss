@@ -6,6 +6,17 @@
    
    background-color: black;
    
+   .content{
+
+      padding: 10px;
+
+      .image{
+         text-align: center;
+         padding-top: 20px;
+      }
+   }
+
+   
    
 
    h3{
@@ -16,6 +27,10 @@
    p{
       text-align: center;
       color: $white;
+   }
+
+   center{
+      text-align: center;
    }
 
    

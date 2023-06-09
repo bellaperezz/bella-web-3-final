@@ -437,17 +437,29 @@ header .content h1 {
     Footer
 ============= */
 .footer {
+  padding: 50px 0 30px 0;
   background-color: #000;
 }
 .footer .footer-text p {
   font-size: 16;
   color: #ADABC3;
   text-align: center;
+  justify-self: center;
+}
+.footer .footer-text .image {
+  text-align: center;
+}
+.footer .follow {
+  padding: 0px;
+  text-align: center;
 }
 .footer li {
   list-style: none;
   padding-left: 0;
   display: inline-block;
+}
+.footer ul {
+  padding: 0px;
 }
 
 /* =============
@@ -478,6 +490,7 @@ header .content h1 {
     accessories
 ============= */
 .accessories {
+  padding: 20px 0 20px 0;
   background-color: black;
 }
 .accessories .type h1 {
@@ -611,6 +624,7 @@ header .content h1 {
    FAQ's
 ============= */
 .FAQ {
+  padding: 50px 0 30px 0;
   background-color: #000;
 }
 .FAQ .FAQ-title h1 {
@@ -659,13 +673,26 @@ header .content h1 {
     grid-template-columns: auto 1320px auto;
   }
 }
+.FAQ .FAQ-cards .FAQ-grid .container-1 {
+  gap: 10px;
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+  margin: 25px;
+}
 .FAQ .FAQ-cards .FAQ-grid .container {
   gap: 10px;
   display: block;
   background-color: white;
   border-radius: 15px;
-  padding: 15px 10px 35px 10px;
+  padding: 15px 10px 15px 10px;
   margin: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.FAQ .FAQ-cards .FAQ-grid .container img {
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .FAQ .FAQ-cards .FAQ-grid {
@@ -712,6 +739,13 @@ header .content h1 {
 .gif {
   background-color: black;
 }
+.gif .content {
+  padding: 10px;
+}
+.gif .content .image {
+  text-align: center;
+  padding-top: 20px;
+}
 .gif h3 {
   text-align: center;
   color: #fff;
@@ -720,12 +754,17 @@ header .content h1 {
   text-align: center;
   color: #fff;
 }
+.gif center {
+  text-align: center;
+}
 
 /* =============
     Pricing
 ============= */
 .pricing {
   background-color: black;
+  padding: 50px 0 30px 0;
+  margin: 0px;
 }
 @media (min-width: 768px) {
   .pricing .pricing-cards {
@@ -759,6 +798,8 @@ header .content h1 {
 @media (min-width: 768px) {
   .pricing .pricing-cards .pricing-grid {
     grid-area: pricing;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 992px) {
@@ -768,13 +809,22 @@ header .content h1 {
   }
 }
 .pricing .pricing-cards .pricing-grid li {
-  background-color: #fff;
   list-style: none;
   padding-left: 0;
+  display: flex;
+  padding: 10px;
+}
+.pricing .pricing-cards .pricing-grid li img {
+  padding-right: 10px;
 }
 .pricing .pricing-cards .pricing-grid ul {
   list-style: none;
   padding-left: 0;
+  padding: 5px;
+}
+.pricing .pricing-cards .pricing-grid ul div {
+  padding: 10px 0 0 0;
+  text-align: center;
 }
 .pricing .pricing-cards .pricing-grid a {
   color: #5D5A88;
@@ -784,6 +834,13 @@ header .content h1 {
   text-align: center;
   border-radius: 40px;
   justify-content: center;
+  border: 15px;
+}
+.pricing .pricing-cards .pricing-grid .color {
+  background-color: #F2F1FA;
+}
+.pricing .pricing-cards .pricing-grid .spacing {
+  padding: 0 0 75px 0;
 }
 @media (min-width: 768px) {
   .pricing .pricing-cards .pricing-grid.pricing-1 {
@@ -796,6 +853,7 @@ header .content h1 {
   }
 }
 .pricing .type h2 {
+  margin: 0;
   font-size: 20px;
   color: #5D5A88;
   text-align: center;
@@ -812,6 +870,14 @@ header .content h1 {
 .reviews {
   background-color: black;
   display: block;
+  padding: 20px 0 20px 0;
+  margin: 0;
+  gap: 0px;
+}
+@media (min-width: 576px) {
+  .reviews {
+    margin: 0px;
+  }
 }
 @media (min-width: 768px) {
   .reviews {
@@ -820,11 +886,14 @@ header .content h1 {
 }
 @media (min-width: 1200px) {
   .reviews {
-    margin: 50px 0 60px 0;
+    margin: 0px;
   }
 }
+.reviews .center {
+  text-align: center;
+}
 .reviews .reviews-title h1 {
-  background-color: #000;
+  margin: 0;
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
@@ -848,7 +917,6 @@ header .content h1 {
 }
 @media (min-width: 768px) {
   .reviews .review-cards {
-    gap: 10px;
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". review .";
@@ -857,15 +925,14 @@ header .content h1 {
 @media (min-width: 1200px) {
   .reviews .review-cards {
     grid-template-columns: auto 1140px auto;
+    margin: 0px;
   }
 }
 @media (min-width: 1400px) {
   .reviews .review-cards {
     grid-template-columns: auto 1320px auto;
+    margin: 0px;
   }
-}
-.reviews .review-cards .review-grid {
-  gap: 10px;
 }
 .reviews .review-cards .review-grid .container {
   gap: 10px;
@@ -873,7 +940,7 @@ header .content h1 {
   background-color: white;
   border-radius: 20px;
   padding: 15px 10px 35px 10px;
-  margin: 20px;
+  margin: 30px 20px 30px 20px;
 }
 @media (min-width: 768px) {
   .reviews .review-cards .review-grid {
@@ -903,7 +970,7 @@ header .content h1 {
   text-decoration: none;
   text-align: center;
   border-radius: 40px;
-  margin: 10px 65px 10px 65px;
+  margin: 10px 15px 10px 15px;
 }
 @media (min-width: 768px) {
   .reviews .review-cards .review-grid.review-1 {
@@ -938,6 +1005,11 @@ header .content h1 {
     grid-area: g1;
   }
 }
+@media (min-width: 1200px) {
+  .hero-photos ul li.image-2 {
+    grid-area: g2;
+  }
+}
 .hero-photos .content p {
   font-weight: 400;
   font-size: 16px;
@@ -968,6 +1040,9 @@ header .content h1 {
   color: #fff;
   padding: 0 5px 0 5px;
 }
+.thankyou .dots {
+  display: flex;
+}
 
 /* =============
    order number
@@ -985,6 +1060,10 @@ header .content h1 {
 /* =============
    order progress
 ============= */
+.color {
+  background-color: #000;
+}
+
 .order-progress {
   background-color: #000;
   display: block;
@@ -1003,7 +1082,7 @@ header .content h1 {
   .order-progress .order-cards {
     gap: 10px;
     display: grid;
-    grid-template-columns: 15px auto 15px;
+    grid-template-columns: auto 100 auto;
     grid-template-areas: ". order .";
   }
 }
@@ -1029,7 +1108,7 @@ header .content h1 {
 @media (min-width: 992px) {
   .order-progress .order-cards .order-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 150px auto;
   }
 }
 .order-progress .order-cards .order-grid .center {
@@ -1047,6 +1126,9 @@ header .content h1 {
 .order-progress .order-cards .order-grid ul {
   list-style: none;
   padding-left: 0;
+  padding-top: 100;
+  display: flex;
+  justify-content: center;
 }
 .order-progress .order-cards .order-grid li {
   list-style: none;
@@ -1059,6 +1141,14 @@ header .content h1 {
     grid-area: a1;
   }
 }
+@media (min-width: 576px) {
+  .order-progress .order-cards .order-grid .dots ul {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 100;
+    justify-content: center;
+  }
+}
 @media (min-width: 768px) {
   .order-progress .order-cards .order-grid.dots {
     grid-area: a2;
@@ -1068,4 +1158,93 @@ header .content h1 {
   .order-progress .order-cards .order-grid.processing {
     grid-area: a3;
   }
+}
+
+/* =============
+    order total
+============= */
+@media (min-width: 768px) {
+  .total .total-card {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". total .";
+  }
+}
+@media (min-width: 1200px) {
+  .total .total-card {
+    grid-template-columns: auto 1140px auto;
+  }
+}
+@media (min-width: 1400px) {
+  .total .total-card {
+    grid-template-columns: auto 1320px auto;
+  }
+}
+.total .total-card .total-grid .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .total .total-card .total-grid {
+    grid-area: FAQ;
+  }
+}
+@media (min-width: 992px) {
+  .total .total-card .total-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .total .total-card .total-grid.total-1 {
+    grid-area: a1;
+  }
+}
+.total .container {
+  gap: 10px;
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+  margin: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* =============
+    Typography
+============= */
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* =============
+    gift cards, coupons
+============= */
+.gift-cards .container {
+  gap: 10px;
+  display: block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+  margin: 25px;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+}
+
+/* =============
+    Typography
+============= */
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* =============
+    Typography
+============= */
+body {
+  font-family: "DM Sans", sans-serif;
 }

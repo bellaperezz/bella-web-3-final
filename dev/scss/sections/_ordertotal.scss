@@ -1,0 +1,71 @@
+/* =============
+    order total
+============= */
+.total{
+    
+
+   
+
+    .total-card{
+
+        @include md{
+            gap:10px;
+            display:grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas:
+            ". total ."
+            ;
+        }
+   
+        @include xl{
+            grid-template-columns: auto 1140px auto;
+        }
+   
+        @include xxl{
+            grid-template-columns: auto 1320px auto;
+        }
+
+        .total-grid{
+
+        
+
+            .content{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                text-align: left;
+            }
+            
+           
+            @include md{
+                grid-area: FAQ;
+            }
+       
+             @include lg{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+       
+            }
+
+            &.total-1{
+                @include md{
+                   grid-area: a1;
+                }
+            }
+        }
+   
+    }
+
+    .container{
+        gap:10px;
+        display: block;
+        background-color: white;
+        border-radius: 15px;
+        padding: 15px 10px 15px 10px;
+        margin: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+}
