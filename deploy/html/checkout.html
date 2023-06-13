@@ -9,114 +9,196 @@
     <title>Check Out</title>
   </head>
 
-  <body>
+  <body class="color">
     
     <!--Header-->
 
     <header class="container">
 
-      <div>
+      <div class="content">
 
         <div>
           <img src="../img/logo_.svg" alt="logo"/>
-        
+          
         </div>
 
-        <div>
-          <p>By placing your order you agree to our terms and conditions</p>
+        <!--burger nav-->
+        <div class="burger-container">
+          <button id="burger-btn">
+              <img class= "fa-solid fa-bars" src="../img/burger.svg" alt="burger icon">
+          </button>
         </div>
 
-     </div>
+        <!--desktop nav-->
+        <nav id="main-menu">
+          <div class="hide-for-lg">
+              <button id="close-btn">
+                <img class="img fa-solid fa-bars" src="../img/expandless.svg" alt="close tab">
+              </button> 
+          </div>
+
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Pricing Plans</a></li>
+              <li><a href="html/checkout.html">My Cart</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+
+    <div class="content-1">
+      <p>By placing your order you agree to our terms and conditions</p>
+   </div>
+
     <!--Order Total-->
+    <section class="desktop-container">
+      <section class="total">
+        <div class="total-card content">
+          <div class="total-grid">
 
-    <section class="container total">
-      <div class="total-card">
-        <div class="total-grid">
 
-          <div class="content">
-            <div>
+            <div class="total-grid-row">
               <p>Items</p>
+              <p class="price">US$499.99</p>   
             </div>
 
-            <div class="content-2">
-              <p>US$499.99</p>
+            <div class="total-grid-row">
+              <p class="p">Shipping & handling</p>
+              <p class="price">US$20.99</p>
             </div>
-          </div>
 
-          <div>
-            <p>Shipping & handling</p>
-            <p>US$20.99</p>
-          </div>
-
-          <div>
-            <p>Estimated tax:</p>
-            <p>US$50.00</p>
-          </div>
-          
-          <div>
-            <h1>Order Total:</h1>
-            <p>US$570.98</p>
+            <div class="total-grid-row">
+              <p>Estimated tax:</p>
+              <p class="price">US$50.00</p>
+            </div>
+            
+            <div class="total-grid-row">
+              <h1>Order Total:</h1>
+              <h1 class="price p-color">US$570.98</h1>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!--Shipping Address-->
+
+      <section class="shipping address">
+        <div class="shipping-card content">
+          <div class="shipping-grid">
+
+            <div>
+              <h3>Shipping address</h3>
+            </div>
+            
+            <div class="shipping-grid-row">
+              <p>11 Street Address, City, State, United States</p>
+              <img src="../img/Union.svg" alt="small right arrow">
+            </div>
+
+            <div>
+              <p>Estimated delivery: May 10 2023 - May 12 2023</p>
+            </div>
+
+            <div>
+              <p>Add delivery instructions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Gift cards, coupons-->
+      <section class="gift-cards gift-card">
+        <div class="gift-card-card content">
+          <h3>Gift cards, coupons</h3>
+          <img src="../img/Union.svg" alt="small right arrow">
+        </div>
+      </section>
+
+      <!--Payment method-->
+
+      <section class="payment">
+        <div class="payment-card content">
+          <div class="payment-grid">
+
+            <div class="payment-grid-row">
+              <h3>Payment method</h3>
+            </div>
+
+            
+            <div class="visa-grid-row border-bottom">
+              <img src="../img/visa.svg" alt="visa logo">
+              <p class="align-text">Visa ending in XXXX</p>
+
+              <img class="padding" src="../img/Union.svg" alt="small right arrow">
+              
+            </div>
+
+            <div class="billing-grid-row">
+              <p>Billing address: Same as shipping address</p>
+              <img src="../img/Union.svg" alt="small right arrow">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!--Shipment details-->
+
+      <section class="shipment">
+        <div class="shipment-card content">
+          <div class="shipment-grid">
+
+            <div class="shipment-grid-row">
+              <h3>Shipment details</h3>
+            </div>
+
+            <div class="free-grid-row">
+              <img src="../img/circle.svg" alt="check box">
+              <h3>FREE SHIPPING</h3>
+            </div>
+            
+            <div class="delivery-grid-row">
+              <p>Estimated delivery: May 10 2023 - May 12 2023</p>
+            </div>
+
+            <div class="box-grid-row">
+              
+              <img src="../img/smallbox.svg" alt="checkout item picture">
+              <h5>Shark Stratos Upright Vacuum</h5>
+            </div>  
+
+            <div class="upgrade-grid-row">
+              <p>with true pet upgrade and free shark... CA$499.99</p>
+            </div>
+
+            <div class="quantity">
+              <a href="#">Quantity <img src="../img/down_arroww.svg" alt="dropdown arrow"></a>
+              
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <!--button-->
+
+      <div class="place-order-button button">
+        <div>
+          
+            <a href="../html/Thankyou.html">Place Your Order</a>
+          
+
+          
+        </div>
       </div>
+
     </section>
-
-    <!--Shipping Address-->
-
-    <section>
-      <div>
-        <h3>Shipping address</h3>
-        <p>11 Street Address, City, State, United States</p>
-        <img src="../img/Union.svg" alt="small right arrow">
-        <p>Estimated delivery: May 10 2023 - May 12 2023</p>
-        <p>Add delivery instructions</p>
-      </div>
-    </section>
-
-    <!--Gift cards, coupons-->
-    <section class="gift-cards">
-      <div class="flex">
-        <h3>Gift cards, coupons</h3>
-        <img src="../img/Union.svg" alt="small right arrow">
-      </div>
-    </section>
-
-    <!--Payment method-->
-
-    <section>
-      <div>
-        <h3>Payment method</h3>
-        <img src="../img/visa.svg" alt="visa logo">
-        <p>Visa ending in XXXX</p>
-        <img src="../img/Union.svg" alt="small right arrow">
-        <p>Billing address: Same as shipping address</p>
-        <img src="../img/Union.svg" alt="small right arrow">
-      </div>
-    </section>
-
-    <!--Shipment details-->
-
-    <section>
-      <div>
-        <h3>Shipment details</h3>
-        <img src="../img/circle.svg" alt="check box">
-        <h3>FREE SHIPPING</h3>
-        <p>Estimated delivery: May 10 2023 - May 12 2023</p>
-
-        <img src="../img/smallbox.svg" alt="checkout item picture">
-        <h5>Shark Stratos Upright Vacuum</h5>
-        <p>with true pet upgrade and free shark... CA$499.99</p>
-  
-        <p>Quantity</p>
-
-      </div>
-    </section>
-
-    <div>
-      <a href="#">Place Your Order</a>
-    </div>
 
     <script src="../js/scripts-min.js"></script>
   </body>

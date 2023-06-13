@@ -20,7 +20,7 @@ header{
   .content{
 
       div{
-          margin: 20px 0 20px 0px;
+          margin: 0px;
 
           @include md{
               margin:25px 0 25px 0px;
@@ -28,7 +28,7 @@ header{
       }
 
       img{
-          width: 125px;
+          width: 120px;
           padding-right:0.5ren;
 
           @include lg{
@@ -56,3 +56,74 @@ header{
   }
 }
 
+
+
+
+.content-1{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+
+    p{
+        color: $gray;
+        font-size: 9px;
+        padding: 10px 10px 10px 30px;
+        font-weight: lighter;
+        margin: 0px;
+    }
+}
+    
+
+
+
+header.container{
+    padding: 24px 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+
+    .content{
+
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "logo burger";
+
+        @include lg{
+            grid-template-areas: "logo nav";
+
+        }
+
+        .logo{
+            color: $black;
+            font-size: 40px;
+        }
+
+        .burger-container{
+            img{
+                width:20px;
+            }
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: $white;
+
+            @include lg{
+                display: none;
+            }
+
+            button{
+                border: none;
+                background-color: transparent;
+                
+                font-size: 20px;
+                color: $white;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

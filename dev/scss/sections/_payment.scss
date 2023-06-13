@@ -1,6 +1,126 @@
 /* =============
-    Typography
+    payment method
 ============= */
-body{
-    font-family: 'DM Sans', sans-serif;
+.payment{
+
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5px auto 5px;
+    grid-template-areas: ". content .";
+    padding: 0px 5px 20px 5px;
+
+    .payment-card{
+
+        background-color: white;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        line-height:0.5
+    }
+
+    @include md{
+       
+    }
+
+    @include xl{
+        
+    }
+
+    @include xxl{
+        
+    }
+
+    .payment-grid{
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .payment-grid-row{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            h3{
+                font-size: 14px;
+                text-align: left;
+                margin-top: 10px;
+                color: $textgray;
+            }
+
+            .align-text{
+                font-size: 10px;
+                padding: 10px 20px 10px 20px;
+                
+                
+            }
+
+            p{
+                padding: 0px -50px 0px 20px;
+            }
+
+        }
+
+        .visa-grid-row{
+            display: grid;
+            grid-template-columns: 10% 60% auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+
+            p{
+                font-size: 12px;
+                padding-top: 4px;
+                padding-left: 10px;
+                color: $gray;
+            }
+            img{
+                justify-content: space-between;
+                
+                
+            }
+
+            .padding{
+
+                padding-left: 70px;
+                padding-top: 10px;
+
+            }
+
+            
+
+            
+            
+
+        }
+
+        .border-bottom{
+            border-bottom: 1px solid $gray;
+            padding: 0px;
+            margin-bottom: 10px;
+        }
+
+        .billing-grid-row{
+            display: grid;
+            grid-template-columns: 90% 10%;
+            padding-top: 10px;
+            justify-content: space-between;
+
+
+            p{
+                font-size: 12px;
+                padding-top: 0px;
+                margin: 5px;
+                padding-bottom: 10px;
+                color: $gray;
+            }
+
+            img{
+
+                padding-left: 14px;
+            }
+
+            
+        }
+
+        
+    }
+
 }

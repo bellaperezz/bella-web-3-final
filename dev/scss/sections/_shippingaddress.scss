@@ -1,6 +1,65 @@
 /* =============
-    Typography
+    shipping address
 ============= */
-body{
-    font-family: 'DM Sans', sans-serif;
+.shipping{
+
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5px auto 5px;
+    grid-template-areas: ". content .";
+    padding: 0px 5px 20px 5px;
+
+    .shipping-card{
+
+        background-color: white;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        line-height: 0.5;
+
+        @include md{
+            gap:10px;
+            
+            
+            grid-template-areas:
+            ". total ."
+            ;
+        }
+        @include xl{
+            grid-template-columns: auto 1140px auto;
+        }
+   
+        @include xxl{
+            grid-template-columns: auto 1320px auto;
+        }
+
+        .shipping-grid{
+
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .shipping-grid-row{
+                display: grid;
+                grid-template-columns: 90% 10%;
+                display: flex;
+                line-height: 1;
+                justify-content: space-between;
+                
+               
+            }
+        }
+
+        h3{
+            font-size: 14px;
+            color: $textgray;;
+        }
+
+        p{
+            font-size: 10px;
+            color: $gray;
+        }
+
+
+    }
+
+
 }

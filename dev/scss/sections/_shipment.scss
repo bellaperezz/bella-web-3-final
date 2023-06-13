@@ -1,6 +1,131 @@
 /* =============
     Typography
 ============= */
-body{
-    font-family: 'DM Sans', sans-serif;
+.shipment{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5px auto 5px;
+    grid-template-areas: ". content .";
+    padding: 0px 5px 20px 5px;
+
+   
+
+    .shipment-card{
+        background-color: white;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        line-height:0.5
+    }
+
+    @include md{
+        
+    }
+
+    @include xl{
+        
+    }
+
+    @include xxl{
+        
+    }
+
+    .shipment-grid{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+
+        .shipment-grid-row{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            h3{
+                font-size: 14px;
+                text-align: left;
+                margin-top: 10px;
+                color: $textgray;
+            }
+
+        }
+
+        .free-grid-row{
+            display: grid;
+            grid-template-columns: 10% 40% auto;
+            
+
+            h3{
+                font-size: 14px;
+                text-align: left;
+                margin-top: 5px;
+                color: $textgray;
+            }
+        }
+
+        .delivery-grid-row{
+            display: grid;
+            grid-template-columns: 90% auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            p{
+                font-size: 12px;
+                line-height: 1;
+                margin: 0px;
+                color:$gray;
+                
+                
+            }
+        }
+
+        .box-grid-row{
+            display: grid;
+            grid-template-columns: 20% auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            h5{
+                padding-left: 10px;
+                margin-top:5px;
+                color: $textgray;
+            }
+
+        }
+
+        .upgrade-grid-row{
+            
+            p{
+                font-size: 12px;
+                line-height: 1;
+                margin: 0px;
+                color:$gray;
+                padding-bottom: 15px;
+            }
+        }
+
+        .quantity{
+
+            text-align: left;
+            
+
+            a{
+                
+                margin:10px;
+                border: 2px solid $gray;
+                
+                color: black;
+                padding: 4px 90px;
+                
+                
+                font-weight: lighter;
+                text-decoration: none;
+                
+                
+            }
+        }
+
+        
+
+        
+    }
+
 }

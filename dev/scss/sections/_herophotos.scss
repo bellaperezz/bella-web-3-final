@@ -11,28 +11,13 @@
         padding-left: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
-
-        li{
-            &.image-1{
-
-
-
-             @include xl{
-                grid-area: g1;
-                   
-                }
-            }
-
-            &.image-2{
-
         
-                @include xl{
-                    grid-area: g2;
-                }
-
-            }
+       
+        @include md{
+            border-radius: 10%;
+            gap: 70px;
+            background-color: $purple;
         }
-
 
         
     }
@@ -41,15 +26,12 @@
 
 
         p{
-
-           
-
             
-            font-weight: 400;
-            font-size: 16px;
+            font-weight:lighter;
+            font-size: 14px;
             line-height: 21px;
             text-align: center;
-
+            padding-top: 50px;
             color: #FFFFFF;
         }
     }

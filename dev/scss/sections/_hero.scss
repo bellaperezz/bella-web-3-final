@@ -9,6 +9,11 @@
     
         padding: 40px;
         background-color: $black;
+        padding-top: 100px;
+
+        @include md{
+            padding-top: 150px;
+        }
       
 
 

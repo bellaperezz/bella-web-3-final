@@ -67,13 +67,40 @@
             font-size: 22px;
             color: $purple;
          }
+
+         .dots-container{
+
+            @include lg{
+               display: flex;
+               
+            }
+         }
    
          ul{
             list-style: none;
             padding-left: 0;
             padding-top: 100;
-            display: flex;
-            justify-content: center;
+            text-align: center;
+            padding:25px;
+            
+            
+
+            @include lg{
+               display: flex;
+               justify-content: center;
+            }
+
+            li{
+               padding:10px;
+               img{
+                  width: 12px;
+
+                  @include lg{
+                     width:100%;
+                  }
+
+               }
+            }
          }
    
          li{
@@ -90,7 +117,7 @@
             }
          }
 
-         .dots{
+         .small{
 
             @include sm{
                ul{

@@ -3,18 +3,51 @@
 ============= */
 .gift-cards{
 
-    
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5px auto 5px;
+    grid-template-areas: ". content .";
+    padding: 0px 5px 20px 5px;
 
-   .container{
-        gap:10px;
-        display: block;
+    .gift-card-card{
         background-color: white;
-        border-radius: 15px;
-        padding: 15px 10px 15px 10px;
-        margin: 25px;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        line-height: 0.5;
         display: flex;
         justify-content: space-between;
-        display: flex;
+        
+        img{
+            padding-left: 125px;
+        }
 
-   }
+        h3{
+            font-size: 14px;
+            margin: 0px 5px 0px 5px;
+            line-height: 20px;
+            display: flex;
+            color: $textgray;
+            
+        }
+
+        @include md{
+            gap:10px;
+            
+            
+            grid-template-areas:
+            ". total ."
+            ;
+        }
+   
+        @include xl{
+            grid-template-columns: auto 1140px auto;
+        }
+   
+        @include xxl{
+            grid-template-columns: auto 1320px auto;
+        }
+
+
+    }
+
 }

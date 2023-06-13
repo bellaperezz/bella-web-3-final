@@ -58,3 +58,60 @@
     padding-top:30px;
     padding-bottom:18px;
 }
+
+.place-order-button{
+    text-align: center;
+    background-color: $black;
+    padding-bottom: 20px;
+
+    @include md{
+
+        padding-top: 150px;
+    }
+
+    a{
+        border-radius: 30px;
+        background-color: $darkpurple;
+        border: none;
+        padding: 10px 40px;
+        color: $white;
+        
+        
+            text-decoration: none;
+          
+        
+
+       
+
+        
+    }
+}
+
+.color{
+    background-color: black;
+}
+
+.border-bottom{
+    border-bottom: 1px solid $gray;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.show-menu{
+    display: block !important;
+}
+
+.hide-for-lg{
+    @include lg{
+        display: none;
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+
+    li{
+        list-style: none;
+    }
+}
